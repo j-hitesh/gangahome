@@ -279,10 +279,12 @@
             <h3 class="text-xl text-gray-300 text-center mb-12">Strategic Location with Unmatched Connectivity</h3>
             
           <div class="bg-white !rounded-lg overflow-hidden mb-12 h-[400px] relative">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4745868366963!2d76.96277727549247!3d28.404933275789812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d1bf285df8b%3A0xa69cf7c4485700a3!2sGanga%20Realty%20-%20Nandaka%2084!5e0!3m2!1sen!2sin!4v1763589430907!5m2!1sen!2sin"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+            title="Google Map - Ganga Realty Nandaka 84 Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4745868366963!2d76.96277727549247!3d28.404933275789812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d1bf285df8b%3A0xa69cf7c4485700a3!2sGanga%20Realty%20-%20Nandaka%2084!5e0!3m2!1sen!2sin!4v1763589430907!5m2!1sen!2sin"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"></iframe>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -382,7 +384,7 @@
             <p class="text-xl text-center mb-16 text-gray-600">Everything You Need to Know</p>
             <div class="max-w-3xl mx-auto space-y-6">
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         What is the exact location of Ganga Realty Nandaka?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -398,7 +400,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         What configurations are available in Ganga Realty Nandaka?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -414,7 +416,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         Who is the developer of Ganga Realty Nandaka?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -430,7 +432,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         What makes Ganga Realty Nandaka different from other projects in Sector 84?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -446,7 +448,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         How can I verify the RERA approval status of Ganga Realty Nandaka?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -462,7 +464,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         Is Ganga Realty Nandaka close to major commercial and IT hubs?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -607,18 +609,89 @@
         </div>
     </section>
     <div id="lightbox" class="lightbox fixed inset-0 z-[100] bg-black/90 hidden flex items-center justify-center">
-        <button id="closeLightbox" class="absolute top-6 right-6 text-white w-10 h-10 flex items-center justify-center z-[110] hover:bg-white/10 rounded-full transition">
+        <button type="button" aria-label="close" id="closeLightbox" class="absolute top-6 right-6 text-white w-10 h-10 flex items-center justify-center z-[110] hover:bg-white/10 rounded-full transition">
             <i class="ri-close-line ri-2x"></i>
         </button>
-        <button id="prevImage"
+        <button type="button" aria-label="previous image" id="prevImage"
             class="absolute left-6 top-1/2 -translate-y-1/2 text-white w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition">
             <i class="ri-arrow-left-s-line ri-2x"></i>
         </button>
         <img id="lightboxImage" src="" alt="Gallery Image" class="max-w-[90%] max-h-[90vh] object-contain">
-        <button id="nextImage"
+        <button type="button" aria-label="next image" id="nextImage"
             class="absolute right-6 top-1/2 -translate-y-1/2 text-white w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition">
             <i class="ri-arrow-right-s-line ri-2x"></i>
         </button>
-    </div> 
+    </div>
+
+    <script id="galleryScript">
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const closeLightbox = document.getElementById('closeLightbox');
+            const prevImage = document.getElementById('prevImage');
+            const nextImage = document.getElementById('nextImage');
+            
+            const images = [
+            
+            ];
+            let currentImageIndex = 0;
+
+            function openLightbox(index) {
+                if(index >= images.length) index = 0;
+                
+                lightboxImage.src = images[index];
+                currentImageIndex = index;
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex'); 
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightboxFn() {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            function showPrevImage() {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                lightboxImage.src = images[currentImageIndex];
+            }
+
+            function showNextImage() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                lightboxImage.src = images[currentImageIndex];
+            }
+
+            // Gallery item click
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => openLightbox(index));
+            });
+
+            // Lightbox controls
+            closeLightbox.addEventListener('click', closeLightboxFn);
+            prevImage.addEventListener('click', showPrevImage);
+            nextImage.addEventListener('click', showNextImage);
+
+            // Close lightbox on outside click
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    closeLightboxFn();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function (e) {
+                if (lightbox.classList.contains('hidden')) return;
+                if (e.key === 'Escape') {
+                    closeLightboxFn();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrevImage();
+                } else if (e.key === 'ArrowRight') {
+                    showNextImage();
+                }
+            });
+        });
+    </script>
 </body>
 </html>

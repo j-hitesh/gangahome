@@ -9,50 +9,39 @@
 <script src="https://kit.fontawesome.com/e9017f59d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <footer class="bg-black text-white py-16">
-        <div class="container mx-auto px-6">
+    <footer class="bg-gray-200 text-black py-12">
+        <div class="container flex justify-center mx-auto px-6">
 
-            <div class="flex justify-center mb-12">
-                <h1 class="font-['Pacifico'] text-3xl text-white">
-                    <img style="width: 150px;" src="Images/Ganga Logo New.png" alt="Ganga Realty footer logo - trusted real estate company">
-                </h1>
+           <img  src="Images/Ganga Logo.webp" alt="Ganga Realty footer logo - trusted real estate company">
             </div>
  
-            <div class="flex flex-wrap justify-center gap-4 mb-3">
-                <a href="/" class="footer_link text-white hover:text-gray-300 transition-colors uppercase text-sm">HOME</a>
-                <a href="/about" class="footer_link text-white hover:text-gray-300 transition-colors uppercase text-sm">ABOUT US</a>
-                <a href="/contact" class="footer_link text-white hover:text-gray-300 transition-colors uppercase text-sm">CONTACT US</a>
-                <a href="/blogs" class="footer_link text-white hover:text-gray-300 transition-colors uppercase text-sm">BLOGS</a>
+            <div class="flex flex-wrap justify-center gap-4 mb-3 font-semibold">
+                <a href="/" class="footer_link  transition-colors uppercase text-sm">HOME</a>
+                <a href="/about" class="footer_link  transition-colors uppercase text-sm">ABOUT US</a>
+                <a href="/contact" class="footer_link  transition-colors uppercase text-sm">CONTACT US</a>
+                <a href="/blogs" class="footer_link  transition-colors uppercase text-sm">BLOGS</a>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-
-                </div>
-                <div class="col-md-4">
-
-                </div>
-                <div class="col-md-4">
-
-                </div>
+            
             </div>
             <!-- Contact Information -->
                 <div class="text-center mb-4">
-                        <button onclick="toggleShowEmail()" class="text-white mb-2 cursor-pointer">Email</button>
-                        <p id="email" class="text-gray-300 text-sm hidden">info@gangareality.com</p>
+                        <button type="button" onclick="toggleShowEmail()" class="font-semibold mb-2 cursor-pointer">Email
+                            <i class="ri-arrow-down-s-line"></i></button>
+                        <p id="email" class="text-gray-800 text-sm hidden">info@gangareality.com</p>
                 </div>
         
             <div class="col-md-12 text-center mb-10">
                 <div>
-                    <button onclick="toggleShow()" class="text-white cursor-pointer mb-2">DISCLAIMER</button>
-                    <p id="discription" class="text-white text-opacity-60 text-sm hidden">The content provided on this website is for information purpose only and is not an offer to avail of any services. This is not the official website of the builder or owner and it belongs to channel partner. All rights for logo and images reserved for the builder. The prices mentioned on the website are subject to change without any prior notice and availability of properties can not be guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. The specifications, dimensions, services, facilities, & infrastructure are illustrative & indicative and are subject to the change as per the approval from the respective authorities. The company has not verified the information and the compliances of the projects. The company does not make any representation in regards to the compliances done against these projects. Please note that the company has not checked the RERA* registration status, so you should make yourself aware about the RERA* registration status of the project. We may also send updates to the mobile number/email ID registered with us. Purpose of this domain only for information, not claiming official website and projects. All rights of the projects reserved to the developer/builder.</p>
+                    <button type="button" onclick="toggleShow()" class="font-semibold cursor-pointer mb-2">DISCLAIMER <i class="ri-arrow-down-s-line"></i></button>
+                    <p id="discription" class="font-medium text-opacity-60 text-sm hidden">The content provided on this website is for information purpose only and is not an offer to avail of any services. This is not the official website of the builder or owner and it belongs to channel partner. All rights for logo and images reserved for the builder. The prices mentioned on the website are subject to change without any prior notice and availability of properties can not be guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. The specifications, dimensions, services, facilities, & infrastructure are illustrative & indicative and are subject to the change as per the approval from the respective authorities. The company has not verified the information and the compliances of the projects. The company does not make any representation in regards to the compliances done against these projects. Please note that the company has not checked the RERA* registration status, so you should make yourself aware about the RERA* registration status of the project. We may also send updates to the mobile number/email ID registered with us. Purpose of this domain only for information, not claiming official website and projects. All rights of the projects reserved to the developer/builder.</p>
                 </div>
             </div>
             <!-- Company Names -->
          
         </div>
 <!-- Contact Icons -->
-<div class="absolute top-5 right-4">
-  <button id="floating-btn-2" onclick="toggleContact()"
+<div class="absolute top-1/4 right-4">
+  <button type="button" id="floating-btn-2" onclick="toggleContact()"
     class="bg-black text-white px-4 py-3 rounded shadow-lg flex items-center justify-center z-40 whitespace-nowrap cursor-pointer">
     <i class="ri-customer-service-line mr-2"></i>
     <span>Talk to an Expert</span>

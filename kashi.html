@@ -280,7 +280,9 @@
             <h3 class="text-xl text-gray-300 text-center mb-12">Strategic Location with Unmatched Connectivity</h3>
             
           <div class="bg-white !rounded-lg overflow-hidden mb-12 h-[400px] relative">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4744305305458!2d76.96277727428377!3d28.40493799438174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d1bf285df8b%3A0xa69cf7c4485700a3!2sGanga%20Realty%20-%20Ganga Realty Sector 89%2084!5e0!3m2!1sen!2sin!4v1749107947462!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Google Map Location - Ganga Realty Sector 89 & 84"
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4744305305458!2d76.96277727428377!3d28.40493799438174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d1bf285df8b%3A0xa69cf7c4485700a3!2sGanga%20Realty%20-%20Ganga%20Realty%20Sector%2089%2084!5e0!3m2!1sen!2sin!4v1749107947462!5m2!1sen!2sin"
+                 class="w-full h-full border-0" loading="lazy" allowfullscreen="" ></iframe>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -380,7 +382,7 @@
             <p class="text-xl text-center mb-16 text-gray-600">Everything You Need to Know</p>
             <div class="max-w-3xl mx-auto space-y-6">
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         What is Ganga Realty Kashi Residences?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -396,7 +398,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         What is the exact location of Ganga Realty Kashi Residences?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -412,7 +414,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         Is Ganga Realty Kashi Residences a gated community?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -428,7 +430,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         Is the project RERA approved?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -444,7 +446,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         Are there any nearby schools, hospitals, or markets?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -460,7 +462,7 @@
                     </div>
                 </details>
     
-                <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                     <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                         Who should invest in Ganga Realty Kashi Residences?
                         <span class="transition-transform duration-300 group-open:rotate-45 text-primary">
@@ -631,15 +633,15 @@
     <!-- NEW ENQUIRY SECTION END -->
 
     <div id="lightbox" class="lightbox fixed inset-0 z-[100] bg-black/90 hidden flex items-center justify-center">
-        <button id="closeLightbox" class="absolute top-6 right-6 text-white w-10 h-10 flex items-center justify-center z-[110] hover:bg-white/10 rounded-full transition">
+        <button type="button" aria-label="close" id="closeLightbox" class="absolute top-6 right-6 text-white w-10 h-10 flex items-center justify-center z-[110] hover:bg-white/10 rounded-full transition">
             <i class="ri-close-line ri-2x"></i>
         </button>
-        <button id="prevImage"
+        <button type="button" aria-label="previous image" id="prevImage"
             class="absolute left-6 top-1/2 -translate-y-1/2 text-white w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition">
             <i class="ri-arrow-left-s-line ri-2x"></i>
         </button>
         <img id="lightboxImage" src="" alt="Gallery Image" class="max-w-[90%] max-h-[90vh] object-contain">
-        <button id="nextImage"
+        <button type="button" aria-label="next image" id="nextImage"
             class="absolute right-6 top-1/2 -translate-y-1/2 text-white w-12 h-12 flex items-center justify-center hover:bg-white/10 rounded-full transition">
             <i class="ri-arrow-right-s-line ri-2x"></i>
         </button>
@@ -655,11 +657,7 @@
             const nextImage = document.getElementById('nextImage');
             
             const images = [
-                'assets/img/89/gallery1.webp',
-                'assets/img/89/gallery2.webp',
-                'assets/img/89/gallery3.webp',
-                'assets/img/89/banner.webp',
-                'assets/img/89/kashi-residence.webp',
+            
             ];
             let currentImageIndex = 0;
 

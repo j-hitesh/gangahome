@@ -65,7 +65,7 @@
     
     <main>
 
-        <button class="fixed top-1/3 rotate-270 inset-y-0 right-0 cursor-pointer z-50"
+        <button type="button" class="fixed top-1/3 rotate-270 inset-y-0 right-0 cursor-pointer z-50"
         id="showform"
         onclick="showForm()">Contact US</button>
       <form
@@ -78,6 +78,7 @@
     <!-- Close Button -->
     <button
       type="button"
+      aria-label="close"
      onclick="togglePops()"
      class="absolute top-3 right-3 cursor-pointer">
   <i class="ri-close-line ri-lg"></i>
@@ -160,12 +161,12 @@
                </a>
             </div>
            
-            <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-[rgba(0,0,0,0.2)]" aria-label="Previous slide">
+            <button aria id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-[rgba(0,0,0,0.2)]" aria-label="Previous slide">
                 <i class="ri-arrow-left-s-fill text-2xl text-white"></i>
 
             </button>
             
-            <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[rgba(0,0,0,0.2)]">
+            <button aria-label="Next" id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[rgba(0,0,0,0.2)]">
                 <i class="ri-arrow-right-s-fill text-2xl text-white"></i>
             </button>
         </div>
@@ -174,25 +175,25 @@
         <div class="overflow-hidden md:hidden relative h-[280px] mt-10">
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-anantam-sector-85-gurugram">
-                    <img src="./Images/Phone Anantam.png" alt="Anantam mobile" fetchpriority="high" class="w-full h-[290px] object-cover rounded-b-md">
+                    <img src="./Images/Phone Anantam.png" alt="Anantam mobile" class="w-full h-[290px] object-cover rounded-b-md">
                 </a>
             </div>
             
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-valley-sector-78-gurugram">
-                    <img src="./Images/Phone Ganga.png" alt="Anantam mobile" fetchpriority="high" class="w-full h-[280px] object-cover rounded-b-md">
+                    <img src="./Images/Phone Ganga.png" alt="Anantam mobile" class="w-full h-[280px] object-cover rounded-b-md">
                 </a>
             </div>
             
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
               <a href="/ganga-realty-kashi-residences-sector-89-gurugram">
-                  <img src="./Images/Phone kashi.png" alt="Anantam mobile" fetchpriority="high" class="w-full h-[280px] object-cover rounded-b-md">
+                  <img src="./Images/Phone kashi.png" alt="Anantam mobile"  class="w-full h-[280px] object-cover rounded-b-md">
               </a>
             </div>
             
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-nandaka-sector-84-gurugram">
-                    <img src="./Images/Phone Nandka.png" alt="Anantam mobile" fetchpriority="high" class="w-full h-[280px] object-cover rounded-b-md">
+                    <img src="./Images/Phone Nandka.png" alt="Anantam mobile" class="w-full h-[280px] object-cover rounded-b-md">
                 </a>
             </div>
              
@@ -395,7 +396,7 @@
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2 text-gray-400">Upcoming Project</h3>
                             <p class="text-black text-opacity-40 mb-4">Sector 85, Gurgaon</p>
-                            <p class="text-black text-opacity-40 mb-4" style="font-size: 18px;">Details coming soon</p>
+                            <p class="text-black text-opacity-40 mb-4 text-[18px]">Details coming soon</p>
                             <span class="text-gray-400 font-medium flex items-center">
                                 Stay tuned
                                 <i class="ri-arrow-right-line ml-2"></i>
@@ -485,10 +486,10 @@
                     <h2 class="text-3xl md:text-4xl font-semibold text-center text-black">Our Happy Customers</h2>
 
                     <div class="relative mx-auto max-w-4xl">
-                        <div class="relative h-[300px] sm:h-[360px] md:h-[280px] overflow-hidden">
+                        <div class="relative h-[300px] sm:h-[360px] md:h-[400px] overflow-hidden">
                             <div class="testimonial-slide absolute inset-0 opacity-100 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center ">
                                 <blockquote class=" p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
-                                    <div class="bg-[#FE9856] absolute bottom-0 right-20 shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2">
+                                    <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 mb-5 p-2">
                                         <img src="https://cinimage.org/wp-content/uploads/2021/10/Testimonial-Videos-1.png" alt="Rahul Sharma" class="w-12 h-12 rounded-full object-cover">
                                         <div>
                                             <p class="font-semibold text-black">Mr. Rahul Sharma</p>
@@ -504,7 +505,7 @@
 
                             <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center">
                                 <blockquote class="p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
-                                    <div class="bg-[#FE9856] absolute bottom-0 right-20 shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2">
+                                    <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 mb-5 p-2">
                                         <img src="https://media.istockphoto.com/id/1145045107/photo/portrait-of-a-beautiful-mature-indian-woman.jpg?s=1024x1024&w=is&k=20&c=YzKYt7XOAe_wdf-RqMzKpRAaRbhtG4wYf5pnHA8lA5k=" alt="Anita" class="w-12 h-12 rounded-full object-cover">
                                         <div>
                                             <p class="font-semibold text-black">Anita Panday</p>
@@ -520,7 +521,7 @@
 
                             <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center">
                                 <blockquote class="p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
-                                    <div class="bg-[#FE9856] absolute bottom-0 right-20 shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2">
+                                    <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 mb-5 p-2">
                                         <img src="https://thumbs.dreamstime.com/b/serious-handsome-young-indian-professional-man-looking-camera-formal-suit-confident-stylish-businessman-executive-legal-315449484.jpg" alt="Manish" class="w-12 h-12 rounded-full object-cover">
                                         <div>
                                             <p class="font-semibold text-black">Manish Kumar</p>
@@ -536,7 +537,7 @@
 
                             <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center ">
                                 <blockquote class="p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
-                                    <div class="bg-[#FE9856] absolute bottom-0 right-20 shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2">
+                                    <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2 mb-5">
                                         <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop" alt="Rohit" class="w-12 h-12 rounded-full object-cover">
                                         <div>
                                             <p class="font-semibold text-black">Rohini Sharma</p>
@@ -552,7 +553,7 @@
 
                             <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center">
                                 <blockquote class="p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
-                                    <div class="bg-[#FE9856] absolute bottom-0 right-20 shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2">
+                                    <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2 mb-5">
                                         <img src="https://img.freepik.com/premium-photo/profile-picture-smiling-indian-young-businesswoman-look-camera-posing-workplace-headshot-portrait-happy-millennial-ethnic-female-employee-show-confidence-optimism-employment-concept_774935-1449.jpg" alt="Sima" class="w-12 h-12 rounded-full object-cover">
                                         <div>
                                             <p class="font-semibold text-black">Sima Rao</p>
@@ -568,7 +569,7 @@
 
                             <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center">
                                 <blockquote class="p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
-                                    <div class="bg-[#FE9856] absolute bottom-0 right-20 shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2">
+                                    <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 p-2 mb-5">
                                         <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200&h=200&fit=crop" alt="Asha" class="w-12 h-12 rounded-full object-cover">
                                         <div>
                                             <p class="font-semibold text-black">Asha N.</p>
@@ -606,7 +607,7 @@
                 </span></h2>
                 <div class="max-w-3xl mx-auto space-y-6">
                     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                            1. What type of projects does Ganga Realty develop?
                             <span class="transition-transform duration-300 group-open:rotate-45 text-black">
@@ -622,7 +623,7 @@
                         </div>
                     </details>
     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                             2. Is Ganga Realty a trusted real estate developer in Gurgaon?
                             <span class="transition-transform duration-300 group-open:rotate-45 text-black">
@@ -638,7 +639,7 @@
                         </div>
                     </details>
     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                             3. Are Ganga Realty projects suitable for both homebuyers and investors?
                             <span class="transition-transform duration-300 group-open:rotate-45 text-black">
@@ -654,9 +655,9 @@
                         </div>
                     </details>
     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" >
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
-4. How does Ganga Realty ensure construction quality?                            <span class="transition-transform duration-300 group-open:rotate-45 text-black">
+4. How does Ganga Realty ensure construction quality? <span class="transition-transform duration-300 group-open:rotate-45 text-black">
                                 <i class="ri-add-line ri-lg"></i>
                             </span>
                         </summary>
@@ -668,9 +669,9 @@ Quality is ensured through careful planning, reliable materials, efficient desig
                         </div>
                     </details>
     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
-5. Does Ganga Realty focus on sustainable development?                            <span class="transition-transform duration-300 group-open:rotate-45 text-black">
+5. Does Ganga Realty focus on sustainable development? <span class="transition-transform duration-300 group-open:rotate-45 text-black">
                                 <i class="ri-add-line ri-lg"></i>
                             </span>
                         </summary>
@@ -682,9 +683,9 @@ Yes. Sustainability is integrated into project planning through energy-efficient
                         </div>
                     </details>
     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
-6. Why should I choose Ganga Realty for property investment?                            <span class="transition-transform duration-300 group-open:rotate-45 text-black">
+6. Why should I choose Ganga Realty for property investment?  <span class="transition-transform duration-300 group-open:rotate-45 text-black">
                                 <i class="ri-add-line ri-lg"></i>
                             </span>
                         </summary>
@@ -696,7 +697,7 @@ Ganga Realty offers a balanced approach that combines strong fundamentals, trans
                         </div>
                     </details>
     
-                    <details class="group bg-white rounded-lg shadow-md overflow-hidden" name="faq">
+                    <details class="group bg-white rounded-lg shadow-md overflow-hidden">
                         <summary class="flex justify-between items-center px-6 py-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                            7. Why should I invest in a Ganga Realty project?
                             <span class="transition-transform duration-300 group-open:rotate-45 text-black">
@@ -741,33 +742,38 @@ Ganga Realty offers a balanced approach that combines strong fundamentals, trans
 
                 <div class="mb-5">
                     <label class="block text-gray-700 mb-1 text-base">Full Name</label>
-                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black">
+                    <input placeholder="Enter your full name " type="text" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black">
                 </div>
 
                 <div class="mb-5">
                     <label class="block text-gray-700 mb-1 text-base">Email Address</label>
-                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black">
+                    <input placeholder="Email" type="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black">
                 </div>
 
                 <div class="mb-5">
-                    <label class="block text-gray-700 mb-1 text-base">I'm interested in</label>
                     <div class="relative">
-                        <select class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black pr-10">
-                            <option>Residential Properties</option>
-                            <option>Commercial Spaces</option>
-                            <option>Investment Opportunities</option>
-                            <option>Partnerships</option>
-                        </select>
-                    </div>
+    <label for="interest" class="block text-gray-700 mb-1 text-base">
+        I'm interested in
+    </label>
+
+    <select id="interest" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black pr-10">
+        <option>Residential Properties</option>
+        <option>Commercial Spaces</option>
+        <option>Investment Opportunities</option>
+        <option>Partnerships</option>
+    </select>
+</div>
+
                 </div>
 
                 <div class="mb-6">
                     <label class="block text-gray-700 mb-1 text-base">Your Message</label>
-                    <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black"></textarea>
+                    <textarea placeholder="Type your Quarry" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black"></textarea>
                 </div>
 
-                <button class="w-full bg-black text-white py-3 rounded-md hover:bg-opacity-90 transition-all shadow-md text-lg">
-                    Send Message
+                <button type="submit"
+               class="w-full bg-black text-white py-3 rounded-md hover:bg-opacity-90 transition-all shadow-md text-lg">
+                Send Message
                 </button>
 
             </form>
