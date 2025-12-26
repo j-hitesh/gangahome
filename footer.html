@@ -10,9 +10,9 @@
 </head>
 <body>
     <footer class="bg-gray-200 text-black py-12">
-        <div class="container flex justify-center mx-auto px-6">
+        <div class="container flex justify-center mx-auto px-6 mb-5">
 
-           <img  src="Images/Ganga Logo.webp" alt="Ganga Realty footer logo - trusted real estate company">
+           <img  src="Images/Ganga Logo.png" alt="Ganga Realty footer logo - trusted real estate company" class="w-30">
             </div>
  
             <div class="flex flex-wrap justify-center gap-4 mb-3 font-semibold">
@@ -33,14 +33,14 @@
             <div class="col-md-12 text-center mb-10">
                 <div>
                     <button type="button" onclick="toggleShow()" class="font-semibold cursor-pointer mb-2">DISCLAIMER <i class="ri-arrow-down-s-line"></i></button>
-                    <p id="discription" class="font-medium text-opacity-60 text-sm hidden">The content provided on this website is for information purpose only and is not an offer to avail of any services. This is not the official website of the builder or owner and it belongs to channel partner. All rights for logo and images reserved for the builder. The prices mentioned on the website are subject to change without any prior notice and availability of properties can not be guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. The specifications, dimensions, services, facilities, & infrastructure are illustrative & indicative and are subject to the change as per the approval from the respective authorities. The company has not verified the information and the compliances of the projects. The company does not make any representation in regards to the compliances done against these projects. Please note that the company has not checked the RERA* registration status, so you should make yourself aware about the RERA* registration status of the project. We may also send updates to the mobile number/email ID registered with us. Purpose of this domain only for information, not claiming official website and projects. All rights of the projects reserved to the developer/builder.</p>
+                    <p id="discription" class="font-sm text-gray-500 px-10 text-opacity-60 text-sm hidden">The content provided on this website is for information purpose only and is not an offer to avail of any services. This is not the official website of the builder or owner and it belongs to channel partner. All rights for logo and images reserved for the builder. The prices mentioned on the website are subject to change without any prior notice and availability of properties can not be guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. The specifications, dimensions, services, facilities, & infrastructure are illustrative & indicative and are subject to the change as per the approval from the respective authorities. The company has not verified the information and the compliances of the projects. The company does not make any representation in regards to the compliances done against these projects. Please note that the company has not checked the RERA* registration status, so you should make yourself aware about the RERA* registration status of the project. We may also send updates to the mobile number/email ID registered with us. Purpose of this domain only for information, not claiming official website and projects. All rights of the projects reserved to the developer/builder.</p>
                 </div>
             </div>
             <!-- Company Names -->
          
         </div>
 <!-- Contact Icons -->
-<div class="absolute top-1/4 right-4">
+<div class="absolute top-10 right-4">
   <button type="button" id="floating-btn-2" onclick="toggleContact()"
     class="bg-black text-white px-4 py-3 rounded shadow-lg flex items-center justify-center z-40 whitespace-nowrap cursor-pointer">
     <i class="ri-customer-service-line mr-2"></i>
@@ -54,22 +54,50 @@
            pointer-events-none">
     
     <!-- WhatsApp -->
-    <a href="https://wa.me/1234567890"
-      class="block text-green-500 text-4xl hover:scale-125 transition">
-      <img src="./Images/whatapp image.png" alt="WhatsApp" class="w-10">
-    </a>
+  <div class="flex flex-col items-center gap-3">
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/1234567890"
+    class="group flex h-14 w-14 items-center justify-center rounded-xl 
+           bg-green-500/10 backdrop-blur border border-green-500/20
+           transition-all duration-300 hover:scale-125 hover:bg-green-500"
+  >
+    <img
+      src="./Images/whatapp image.png"
+      alt="WhatsApp"
+      class="w-8 transition duration-300 group-hover:invert"
+    />
+  </a>
 
-    <!-- Phone -->
-    <a href="tel:+1234567890"
-      class="block text-green-600 text-2xl hover:scale-110 transition mt-2">
-      <img src="./Images/Call Now.png" alt="Caller Logo" class="w-10">
-    </a>
+  <!-- Phone -->
+  <a
+    href="tel:+1234567890"
+    class="group flex h-14 w-14 items-center justify-center rounded-xl
+           bg-green-600/10 backdrop-blur border border-green-600/20
+           transition-all duration-300 hover:scale-110 hover:bg-green-600"
+  >
+    <img
+      src="./Images/Call Now.png"
+      alt="Call"
+      class="w-8 transition duration-300 group-hover:invert"
+    />
+  </a>
 
-    <!-- Email -->
-    <a href="mailto:info@gangareality.com"
-      class="block text-red-600 text-3xl hover:scale-110 transition mt-2">
-      <img src="./Images/mail now.png" alt="mail logo" class="w-10">
-    </a>
+  <!-- Email -->
+  <a
+    href="mailto:info@gangareality.com"
+    class="group flex h-14 w-14 items-center justify-center rounded-xl
+           bg-red-600/10 backdrop-blur border border-red-600/20
+           transition-all duration-300 hover:scale-110 hover:bg-red-600"
+  >
+    <img
+      src="./Images/mail now.png"
+      alt="Email"
+      class="w-8 transition duration-300 group-hover:invert"
+    />
+  </a>
+</div>
+
   </div>
 </div>
 

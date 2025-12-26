@@ -16,15 +16,41 @@
      <link rel="preload" as="image" href="./Images/web Ganga.png">
      <link rel="preload" as="image" href="./Images/web kashi.png">
 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ <style>
+    .head,h2,h1,h3, input,p, button, section,div, header{
+        font-family: "Inter", sans-serif;
+    }
+   
+     @keyframes slide {
+  0%, 20% { transform: translateY(0); }
+  25%, 45% { transform: translateY(-24px); } 
+  50%, 70% { transform: translateY(-48px); }
+  75%, 95% { transform: translateY(-72px); } 
+  100% { transform: translateY(-96px); } 
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
+
+.animate-slide h3 {
+  transition: transform 0.3s, font-size 0.3s;
+}
+
+
+ </style> 
 </head>
 <body>
 <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 max-h-2xl">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center w-full h-25">
         <a href="/" class=" w-30 md:w-40">
-        <img src="./Images/Ganga Logo.webp"
-       alt="Ganga Realty logo - trusted real estate developer in Gurgaon">
+        <img src="./Images/Ganga Logo.png"
+       alt="Ganga Realty logo - trusted real estate developer in Gurgaon"> 
        </a>
-        <nav class="hidden md:flex space-x-8">
+        <nav class="hidden md:flex space-x-8 font-Inter">
             <div class="relative group">
                 <a href="#projects" class="nav-link text-gray-700 hover:text-black transition-colors inline-flex items-center">
                     Projects
@@ -62,15 +88,25 @@
         </nav>
     </div>
 </header>
-    
     <main>
-
-        <button type="button" class="fixed top-1/3 rotate-270 inset-y-0 right-0 cursor-pointer z-50"
+        <button type="button" class="fixed bottom-5 left-1/3 md:top-2/3 md:rotate-270 md:inset-y-0 md:left-[93%] z-50 cursor-pointer bg-linear-to-b from-red-500 to-red-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] h-10 px-2 py-1 rounded-xl border w-30 border-slate-500 text-white font-medium group"
         id="showform"
-        onclick="showForm()">Contact US</button>
-      <form
+        onclick="showForm()">
+        <div class="relative overflow-hidden">
+    <p
+      class="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]"
+    >
+      Contact us 
+    </p>
+    <p
+      class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]"
+    >
+      For Quarry
+    </p>
+  </div></button>
+ <form
   id="formclose"
-  class="hidden fixed flex inset-0 z-10 items-center justify-center bg-white/40 px-4 top-25 ">
+  class="hidden fixed inset-0 z-10 items-center justify-center bg-white/60 px-4 top-30 md:left-1/3 ">
 
   <div
     class="relative bg-white/80 backdrop-blur-md px-4 py-6 rounded-lg shadow-md md:w-full max-w-md"
@@ -136,28 +172,30 @@
     </div>
   </div>
 </form>
+ 
 
-       <div class="relative h-[370px] overflow-hidden hidden md:block mt-10 ">
-            <div class="slide absolute inset-0 opacity-100 transition-opacity duration-700 ">
+       <div class="md:h-87.5 overflow-hidden mt-30 hidden md:grid md:grid-cols-[900px_minmax(300px,1fr)_100px] bg-gray-200 mx-auto md:mx-10 rounded-lg gap-5">
+           <div class="relative">
+             <div class="slide absolute inset-0 opacity-100 transition-opacity duration-700">
               <a href="/ganga-realty-anantam-sector-85-gurugram">
-                  <img src="./Images/Web anantam 1.png" alt="web Anantam"  class="w-[100%] object-top h-[340px] object-cover transition-transform duration-300 hover:scale-110">
+                  <img src="./Images/anatam web.png" alt="web Anantam" class="w-full h-87">
             </a> 
               </div>  
 
             <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
                <a href="/ganga-realty-valley-sector-78-gurugram">
-                <img src="./Images/web-Gangavalley.png" alt="web-Gangavalley"  class="w-full object-top h-[340px] object-cover transition-transform duration-300 hover:scale-110">
+                <img src="./Images/valley 1.webp" alt="web-Gangavalley"  class="w-full h-87">
                </a> 
             </div>
             
             <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
                 <a href="/ganga-realty-kashi-residences-sector-89-gurugram">
-                    <img src="./Images/web kashi.png" alt="web kashi" class="w-full object-top h-[340px] object-cover transition-transform duration-300 hover:scale-110">
+                    <img src="./Images/kashi 2.webp" alt="web kashi" class="w-full h-87">
                 </a>
             </div>
             <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
                <a href="/ganga-realty-nandaka-sector-84-gurugram">
-                   <img src="./Images/Web nandka.png" alt="web nandka" class="w-full object-top h-[340px] object-cover transition-transform duration-300 hover:scale-110">
+                   <img src="./Images/Nandka.png" alt="web nandka" class="w-full h-87 ">
                </a>
             </div>
            
@@ -169,42 +207,65 @@
             <button aria-label="Next" id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[rgba(0,0,0,0.2)]">
                 <i class="ri-arrow-right-s-fill text-2xl text-white"></i>
             </button>
+           </div>
+           <div class="mt-10 py-10">
+                <h1 class="text-center text-semibold text-xl md:text-4xl head">GANGA REALTY</span></h1>
+                <div class="overflow-hidden h-40 relative mt-5">
+              <div class="flex flex-col animate-slide">
+               <h3 class="text-base text-gray-700 mb-5">Luxury Residences Offering Exceptional Investment Opportunities</h3>
+               <h3 class="text-base text-gray-700 mb-5">Exclusive Homes Designed for Elegant Living and Smart Returns</h3>
+                <h3 class="text-base text-gray-700 mb-5">Premium Properties Combining Comfort, Style, and High ROI</h3>
+                 <h3 class="text-base text-gray-700 mb-5">High-End Living Spaces with Superior Investment Potential</h3>
+                  <h3 class="text-base text-gray-700 mb-5">Where Luxury Meets Strategic Real Estate Investment</h3>
+                 </div> 
+            </div>
+           </div>
         </div>
+           
         <!-- phone view -->
         
-        <div class="overflow-hidden md:hidden relative h-[280px] mt-10">
-            <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
+        <div class="overflow-hidden md:hidden h-100 mt-10 grid grid-row-2">
+           <div class="relative">
+               <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-anantam-sector-85-gurugram">
-                    <img src="./Images/Phone Anantam.png" alt="Anantam mobile" class="w-full h-[290px] object-cover rounded-b-md">
+                    <img src="./Images/anatam phone.png" alt="Anantam mobile" class="w-full h-70 object-cover rounded-b-md">
                 </a>
             </div>
             
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-valley-sector-78-gurugram">
-                    <img src="./Images/Phone Ganga.png" alt="Anantam mobile" class="w-full h-[280px] object-cover rounded-b-md">
+                    <img src="./Images/anantam 1.webp" alt="Anantam mobile" class="w-full h-70 object-cover rounded-b-md">
                 </a>
             </div>
             
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
               <a href="/ganga-realty-kashi-residences-sector-89-gurugram">
-                  <img src="./Images/Phone kashi.png" alt="Anantam mobile"  class="w-full h-[280px] object-cover rounded-b-md">
+                  <img src="./Images/kashi 2.webp" alt="Anantam mobile"  class="w-full h-70 object-cover rounded-b-md">
               </a>
             </div>
             
             <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-nandaka-sector-84-gurugram">
-                    <img src="./Images/Phone Nandka.png" alt="Anantam mobile" class="w-full h-[280px] object-cover rounded-b-md">
+                    <img src="./Images/Nandka.png" alt="Anantam mobile" class="w-full h-70 object-cover rounded-b-md">
                 </a>
             </div>
-             
-        </div>
-            <div class="px-10 py-4">
-                <h1 class="text-center text-semiblod text-xl md:text-4xl/8 ">GANGA REALTY GURUGRAM</span></h1>
-                <h2 class="text-center text-lg md:text-xl mt-2">Luxury Homes & High-Return Investment Opportunities</h2>
+           </div>
+              <div class="relative top-4/9 mt-12 py-10">
+                <h1 class="text-center text-semibold text-xl md:text-4xl head">GANGA REALTY</span></h1>
+                <div class="overflow-hidden h-40 relative mt-2 px-5">
+              <div class="flex flex-col animate-slide">
+               <h3 class="text-sm text-gray-700 mb-2">Luxury Residences Offering Exceptional Investment Opportunities</h3>
+               <h3 class="text-sm text-gray-700 mb-2">Exclusive Homes Designed for Elegant Living and Smart Returns</h3>
+                <h3 class="text-sm text-gray-700 mb-2">Premium Properties Combining Comfort, Style, and High ROI</h3>
+                 <h3 class="text-sm text-gray-700 mb-2">High-End Living Spaces with Superior Investment Potential</h3>
+                  <h3 class="text-sm text-gray-700 mb-2">Where Luxury Meets Strategic Real Estate Investment</h3>
+                 </div> 
             </div>
+           </div>
+        </div>
 
         </div>  
-        <section id="projects" class="py-10">
+        <section id="projects" class="py-10 mx-10">
             <div class="container mx-auto px-6 py-12 rounded-lg bg-gray-200">
                 <h2 class="text-3xl md:text-4xl font-semibold text-center mb-16 text-black">Signature Projects by Ganga Realty</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -412,19 +473,18 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2">
-                        <div class="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative w-full h-100 rounded-lg overflow-hidden shadow-lg">
                             <img src="Images/Our Comtment.jpeg"
                                      alt="Ganga Realty team - trusted real estate experts in Gurgaon"
                                      class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 pointer-events-none rounded-lg"></div>
                         </div>
                     </div>
                     <div class="lg:w-1/2">
                         <h3 class="text-2xl/10 md:text-3xl/10 font-medium mb-3 text-gray-900">How We Build Quality That Lasts</h3>
-                        <p class="text-black text-opacity-70 mb-6 leading-relaxed">
+                        <p class="text-gray-600 text-opacity-70 mb-6 leading-relaxed">
                             At Ganga Realty, building quality that lasts starts with strong fundamentals. Every project is planned with a clear focus on structural strength, practical design, and long-term usability. We follow a disciplined development process where planning, materials, and execution are carefully aligned to ensure consistent results. Rather than chasing trends, we prioritise durability, efficiency, and real-world functionality.
                         </p>
-                        <p class="text-black text-opacity-70 mb-6 leading-relaxed">
+                        <p class="text-gray-600 text-opacity-70 mb-6 leading-relaxed">
                            Transparency and accountability guide each stage of construction, from approvals to final delivery. Layouts are designed for everyday comfort, while materials and construction practices are selected to perform well over time. Sustainability is integrated thoughtfully, without compromising quality or liability. This balanced approach allows homebuyers to enjoy reliable living spaces and gives investors confidence in stable, long-term value. By staying committed to quality at every level, Ganga Realty delivers developments that remain dependable, relevant, and valuable well beyond possession
                         </p>
                         <!-- <p class="text-black text-opacity-70 mb-6 leading-relaxed">
@@ -441,7 +501,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold mb-2">Sustainability</h3>
-                                    <p class="text-black text-opacity-60 text-sm">Eco-friendly materials and
+                                    <p class="text-gray-600 text-opacity-60 text-sm">Eco-friendly materials and
                                         energy-efficient designs</p>
                                 </div>
                             </div>
@@ -452,7 +512,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold mb-2">Wellness</h3>
-                                    <p class="text-black text-opacity-60 text-sm">Spaces that promote physical and mental
+                                    <p class="text-gray-600 text-opacity-60 text-sm">Spaces that promote physical and mental
                                         wellbeing</p>
                                 </div>
                             </div>
@@ -463,7 +523,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold mb-2">Community</h3>
-                                    <p class="text-black text-opacity-60 text-sm">Fostering connections through thoughtful
+                                    <p class="text-gray-600 text-opacity-60 text-sm">Fostering connections through thoughtful
                                         spaces</p>
                                 </div>
                             </div>
@@ -474,7 +534,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold mb-2">Quality</h3>
-                                    <p class="text-black text-opacity-60 text-sm">Uncompromising standards in every detail
+                                    <p class="text-gray-600 text-opacity-60 text-sm">Uncompromising standards in every detail
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +546,7 @@
                     <h2 class="text-3xl md:text-4xl font-semibold text-center text-black">Our Happy Customers</h2>
 
                     <div class="relative mx-auto max-w-4xl">
-                        <div class="relative h-[300px] sm:h-[360px] md:h-[400px] overflow-hidden">
+                        <div class="relative h-75 sm:h-90 md:h-100 overflow-hidden">
                             <div class="testimonial-slide absolute inset-0 opacity-100 transition-opacity duration-700 flex flex-col md:flex-row items-start md:items-center justify-center ">
                                 <blockquote class=" p-4 md:p-6 shadow-sm max-h-full mx-auto mt-10 overflow-hidden md:w-120 w-70">
                                     <div class="bg-[#FE9856] shadow-xl rounded-xl h-15 w-60 flex items-center gap-4 mb-5 p-2">
@@ -495,7 +555,7 @@
                                             <p class="font-semibold text-black">Mr. Rahul Sharma</p>
                                          </div>
                                     </div>
-                                    <p class="text-gray-700">"The entire buying process was seamless and transparent, making everything stress-free. Communication was clear at every step, and the team handled all details professionally. The property exceeded our expectations in quality and finish. We couldn’t be happier with the experience and highly recommend their services to anyone seeking a smooth property purchase."</p>
+                                    <p class="text-gray-600">"The entire buying process was seamless and transparent, making everything stress-free. Communication was clear at every step, and the team handled all details professionally. The property exceeded our expectations in quality and finish. We couldn’t be happier with the experience and highly recommend their services to anyone seeking a smooth property purchase."</p>
                                     <hr class="w-20 mt-5 opacity-20">
                                     <div class="text-yellow-400 flex gap-1 mt-3">
                                         <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
@@ -511,7 +571,7 @@
                                             <p class="font-semibold text-black">Anita Panday</p>
                                         </div>
                                     </div>
-                                    <p class="text-gray-700">"Great location and excellent connectivity made this property ideal. The team maintained consistent and clear communication throughout, making the entire process smooth and hassle-free. The property itself exceeded expectations in quality and value. Overall, a reliable and solid investment that I would confidently recommend to anyone looking for their next home or investment."</p>
+                                    <p class="text-gray-600">"Great location and excellent connectivity made this property ideal. The team maintained consistent and clear communication throughout, making the entire process smooth and hassle-free. The property itself exceeded expectations in quality and value. Overall, a reliable and solid investment that I would confidently recommend to anyone looking for their next home or investment."</p>
                                     <hr class="w-20 mt-5 opacity-20">
                                     <div class="mt-4 text-yellow-400 flex gap-1">
                                         <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
@@ -543,7 +603,7 @@
                                             <p class="font-semibold text-black">Rohini Sharma</p>
                                         </div>
                                     </div>
-                                    <p class="text-gray-700">"The craftsmanship of the property was excellent, reflecting meticulous attention to detail. The project was delivered on time, making the entire process smooth and stress-free. The team’s professionalism and commitment to quality exceeded expectations. Overall, very satisfied with the service and highly recommended for anyone seeking a reliable property experience"</p>
+                                    <p class="text-gray-600">"The craftsmanship of the property was excellent, reflecting meticulous attention to detail. The project was delivered on time, making the entire process smooth and stress-free. The team’s professionalism and commitment to quality exceeded expectations. Overall, very satisfied with the service and highly recommended for anyone seeking a reliable property experience"</p>
                                   <hr class="w-20 mt-5 opacity-20">
                                     <div class="mt-4 text-yellow-400 flex gap-1">
                                         <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
@@ -559,7 +619,7 @@
                                             <p class="font-semibold text-black">Sima Rao</p>
                                         </div>
                                     </div>
-                                    <p class="text-gray-700">"The support team was consistently responsive and very helpful throughout the process, making everything smooth and hassle-free. The apartment itself is beautiful, well-designed, and a joy to live in. Overall, a wonderful experience from start to finish, and I’m extremely satisfied with both the property and the service."</p>
+                                    <p class="text-gray-600">"The support team was consistently responsive and very helpful throughout the process, making everything smooth and hassle-free. The apartment itself is beautiful, well-designed, and a joy to live in. Overall, a wonderful experience from start to finish, and I’m extremely satisfied with both the property and the service."</p>
                                     <hr class="w-20 mt-5 opacity-20">
                                     <div class="mt-4 text-yellow-400 flex gap-1">
                                         <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
@@ -575,7 +635,7 @@
                                             <p class="font-semibold text-black">Asha N.</p>
                                            </div>
                                     </div>
-                                    <p class="text-gray-700">"The pricing was completely transparent, making the decision-making process easy and stress-free. The property offers excellent amenities that enhance comfort and lifestyle. Overall, the quality, location, and features make it a worthwhile investment. I’m extremely satisfied and would confidently recommend it to anyone looking for a reliable property."</p>
+                                    <p class="text-gray-600">"The pricing was completely transparent, making the decision-making process easy and stress-free. The property offers excellent amenities that enhance comfort and lifestyle. Overall, the quality, location, and features make it a worthwhile investment. I’m extremely satisfied and would confidently recommend it to anyone looking for a reliable property."</p>
                                     <hr class="w-20 mt-5 opacity-20">
                                     <div class="mt-4 text-yellow-400 flex gap-1">
                                         <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
@@ -716,18 +776,96 @@ Ganga Realty offers a balanced approach that combines strong fundamentals, trans
                 </div>
             </div>
         </section>
-    
-        <section class="py-16 bg-black text-white text-center">
+
+        <section class="py-20 bg-gray-300 my-20 rounded-lg mx-10 ">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-semibold mb-4">Still have questions?</h2>
-                <p class="text-lg mb-6">Our experts are here to help.</p>
-                <button id="faq-consultation-btn"
-                    class="bg-white text-black px-8 py-3 rounded hover:bg-opacity-90 transition-all shadow-lg whitespace-nowrap font-medium cursor-pointer inline-block">
-                    Book a Free Consultation
-                </button>
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-4 text-black">EMI Calculator</h2>
+            <p class="text-center text-gray-600 mb-12">Calculate your monthly EMI and plan your investment wisely</p>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+                <!-- Calculator Form -->
+                <div class="p-2">
+                <h3 class="text-2xl font-semibold mb-6 text-[#163E64]">Enter Details</h3>
+                
+                <div class="space-y-6">
+                    <!-- Property Price -->
+                    <div>
+                    <label class="block text-gray-700 font-medium">Property Price (₹)</label>
+                    <input type="number" id="propertyPrice" placeholder="50,00,000" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#163E64] focus:outline-none"
+                        value="5000000">
+                    <input type="range" id="priceSlider" min="1000000" max="100000000" step="100000" 
+                        value="5000000" class="w-full mt-2 cursor-pointer">
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>₹10L</span>
+                        <span>₹1Cr</span>
+                    </div>
+                    </div>
+
+                    <!-- Loan Tenure -->
+                    <div>
+                    <label class="block text-gray-700 font-medium mb-2">Loan Tenure (Years)</label>
+                    <input type="number" id="tenure" placeholder="20" min="1" max="30"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#163E64] focus:outline-none"
+                        value="20">
+                    <input type="range" id="tenureSlider" min="1" max="30" step="1" 
+                        value="20" class="w-full mt-2 cursor-pointer">
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>1 Year</span>
+                        <span>30 Years</span>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+                
+                <!-- Results -->
+                <div class="p-8 text-[#163E64]">
+                <h3 class="text-2xl font-semibold mb-8">Your EMI Summary</h3>
+                
+                <div class="space-y-6">
+                    
+                    <!-- Monthly EMI -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                    <p class="text-gray-600 text-opacity-70 text-sm mb-1">Monthly EMI</p>
+                    <p class="text-4xl font-bold text-[#163E64]">₹<span id="emiAmount">38,413</span></p>
+                    </div>
+                    
+                    <!-- Total Interest -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                    <p class="text-gray-600 text-opacity-70 text-sm mb-1">Total Interest Payable</p>
+                    <p class="text-2xl font-bold text-gray-800">₹<span id="totalInterest">61,79,140</span></p>
+                    </div>
+                    
+                    <!-- Total Amount -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                    <p class="text-gray-600 text-opacity-70 text-sm mb-1">Total Amount Payable</p>
+                    <p class="text-2xl font-bold text-gray-800">₹<span id="totalAmount">101,79,140</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Breakdown -->
+            <div class="mt-8 pt-6 border-t border-white border-opacity-20">
+            <h4 class="font-semibold mb-3">Payment Breakdown</h4>
+            <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                <span class="text-opacity-70">Down Payment:</span>
+                <span>₹<span id="downPaymentDisplay">10,00,000</span></span>
+                </div>
+                <div class="flex justify-between">
+                <span class="text-opacity-70">Monthly EMI:</span>
+                <span>₹<span id="emiDisplay">38,413</span> × 240 months</span>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- <button onclick="calculateEMI()" 
+                class="w-40 bg-[#163E64] ml-50 text-white py-3 rounded-lg text-center font-semibold hover:bg-opacity-90 transition-all mt-8">
+                Calculate EMI
+            </button> -->
             </div>
         </section>
-    
         <section id="contact" class="py-20 bg-white">
           <div class="container mx-auto px-4 sm:px-6">
     <h2 class="text-3xl md:text-4xl font-semibold text-center mb-10 text-black">
@@ -783,7 +921,7 @@ Ganga Realty offers a balanced approach that combines strong fundamentals, trans
         <div class="hidden md:flex lg:w-1/2">
             <div class="bg-white rounded-lg shadow-md w-full h-full p-6 flex items-center justify-center">
                 <img src="Images/Contact us.gif" alt="Contactus gif"
-                     class="w-full max-h-[340px] object-contain">
+                     class="w-full max-h-85 object-contain">
             </div>
         </div>
 
@@ -974,7 +1112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 <script>
-  const formclose = document.getElementById("formclose");
+const formclose = document.getElementById("formclose");
 const showform = document.getElementById("showform");
 
 window.addEventListener("load", () => {
@@ -999,6 +1137,149 @@ function showForm() {
     }
 }
 
+function calculateEMI() {
+    const propertyPrice = parseFloat(document.getElementById('propertyPrice').value);
+    const tenure = parseFloat(document.getElementById('tenure').value) * 12;
+    const interestRate = 0.087;
+
+    const monthlyInterest = interestRate / 12;
+
+    const emi = (propertyPrice * monthlyInterest * Math.pow(1 + monthlyInterest, tenure)) /
+                (Math.pow(1 + monthlyInterest, tenure) - 1);
+
+    const totalPayment = emi * tenure;
+    const totalInterest = totalPayment - propertyPrice;
+    const downPayment = propertyPrice * 0.2;
+
+    document.getElementById('emiAmount').innerText = emi.toLocaleString('en-IN', {maximumFractionDigits: 0});
+    document.getElementById('totalInterest').innerText = totalInterest.toLocaleString('en-IN', {maximumFractionDigits: 0});
+    document.getElementById('totalAmount').innerText = totalPayment.toLocaleString('en-IN', {maximumFractionDigits: 0});
+    document.getElementById('downPaymentDisplay').innerText = downPayment.toLocaleString('en-IN', {maximumFractionDigits: 0});
+    document.getElementById('emiDisplay').innerText = emi.toLocaleString('en-IN', {maximumFractionDigits: 0});
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const priceInput = document.getElementById('propertyPrice');
+    const priceSlider = document.getElementById('priceSlider');
+    const tenureInput = document.getElementById('tenure');
+    const tenureSlider = document.getElementById('tenureSlider');
+
+    priceInput.addEventListener('input', () => {
+        priceSlider.value = priceInput.value;
+        calculateEMI();
+    });
+
+    priceSlider.addEventListener('input', () => {
+        priceInput.value = priceSlider.value;
+        calculateEMI();
+    });
+
+    tenureInput.addEventListener('input', () => {
+        tenureSlider.value = tenureInput.value;
+        calculateEMI();
+    });
+
+    tenureSlider.addEventListener('input', () => {
+        tenureInput.value = tenureSlider.value;
+        calculateEMI();
+    });
+
+    calculateEMI();
+});
 </script>
+ <script>
+   document.addEventListener("DOMContentLoaded", () => {
+            const formclose = document.getElementById("formclose");
+            const showform = document.getElementById("showform");
+
+            window.addEventListener("load", () => {
+                setTimeout(() => {
+                    formclose.classList.remove("hidden");
+                    showform.classList.add("hidden");
+                }, 4000);
+            });
+
+            function togglePops() {
+                formclose.classList.toggle("hidden");
+                showform.classList.toggle("hidden");
+            }
+
+            function showForm() {
+                if (formclose.classList.contains("hidden")) {
+                    formclose.classList.remove("hidden");
+                    showform.classList.add("hidden");
+                } else {
+                    formclose.classList.add("hidden");
+                    showform.classList.remove("hidden");
+                }
+            }
+
+            function calculateEMI() {
+                const propertyPrice = parseFloat(document.getElementById('propertyPrice').value);
+                const tenure = parseFloat(document.getElementById('tenure').value) * 12; // years → months
+                const interestRate = 0.087; // 8.7% interest rate
+
+                const monthlyInterest = interestRate / 12;
+
+                const emi = (propertyPrice * monthlyInterest * Math.pow(1 + monthlyInterest, tenure)) /
+                            (Math.pow(1 + monthlyInterest, tenure) - 1);
+
+                const totalPayment = emi * tenure;
+                const totalInterest = totalPayment - propertyPrice;
+                const downPayment = propertyPrice * 0.2; // 20% down payment
+
+                document.getElementById('emiAmount').innerText = Math.round(emi);
+                document.getElementById('totalInterest').innerText = Math.round(totalInterest);
+                document.getElementById('totalAmount').innerText = Math.round(totalPayment);
+                document.getElementById('downPaymentDisplay').innerText = Math.round(downPayment);
+                document.getElementById('emiDisplay').innerText = Math.round(emi);
+            }
+
+            // Initialize sliders and other functionalities
+            initSlider(
+                document.querySelectorAll(".slide"),
+                document.getElementById("prevBtn"),
+                document.getElementById("nextBtn")
+            );
+
+            const mobileSlides = document.querySelectorAll(".slidemobile");
+            const mobileSlider = initSlider(mobileSlides, null, null);
+
+            let startX = 0;
+            let endX = 0;
+
+            const mobileContainer = mobileSlides[0]?.parentElement;
+
+            if (mobileContainer) {
+                mobileContainer.addEventListener("touchstart", e => {
+                    startX = e.touches[0].clientX;
+                });
+
+                mobileContainer.addEventListener("touchend", e => {
+                    endX = e.changedTouches[0].clientX;
+                    handleSwipe();
+                });
+            }
+
+            function handleSwipe() {
+                const diff = startX - endX;
+
+                if (Math.abs(diff) > 50) {
+                    let current = mobileSlider.getCurrent();
+
+                    if (diff > 0) {
+                        current = (current + 1) % mobileSlides.length;
+                    } else {
+                        current = (current - 1 + mobileSlides.length) % mobileSlides.length;
+                    }
+
+                    mobileSlider.setCurrent(current);
+                    mobileSlider.show(current);
+                    mobileSlider.auto();
+                }
+            }
+        });
+</script>
+
 </body>
 </html>
