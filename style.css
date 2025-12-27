@@ -1,0 +1,232 @@
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-text {
+    font-family: 'Playfair Display', serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #1A365D;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        height: 70vh;
+    }
+}
+.video-container{
+    height: 600px;
+}
+
+.footer_link {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    padding: 8px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.17);
+    border-image: initial;
+    border-radius: 100px;
+    transition: 0.85s;
+    overflow: hidden;
+}
+
+.social_link {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 100px;
+    transition: 0.85s;
+    overflow: hidden;
+}
+
+.gap-4 {
+    gap: 5px !important;
+}
+.gap-6 {
+    gap: 1rem !important;
+}
+
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.floating-btn {
+    transition: transform 0.3s ease;
+}
+
+.floating-btn:hover {
+    transform: translateY(-2px);
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #4F46E5;
+    border-color: #4F46E5;
+}
+
+.checkmark:after {
+    content: "";
+    display: none;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.gallery-item img {
+    transition: all 0.3s ease;
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+}
+
+.amenity-card {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.property-slider {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.property-slide {
+    scroll-snap-align: start;
+}
+
+.slider-dots button.active {
+    background-color: #ffffff;
+    width: 2rem;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
