@@ -22,15 +22,15 @@
 
  <style>
    
-    .head,h2,h1,h3, input,p, button, section,div, header{
+    .head,h2,h1,h3, input,p, button, section,div, header, span{
         font-family: "Inter", sans-serif;
     }
    
      @keyframes slide {
   0%, 20% { transform: translateY(0); }
-  25%, 45% { transform: translateY(-24px); } 
-  50%, 70% { transform: translateY(-48px); }
-  75%, 95% { transform: translateY(-72px); } 
+  25%, 45% { transform: translateY(-12px); } 
+  50%, 70% { transform: translateY(-24px); }
+  75%, 95% { transform: translateY(-48px); } 
   100% { transform: translateY(-96px); } 
 }
 
@@ -93,7 +93,7 @@
     </div>
 </header>
     <main>
-        <button type="button" class="fixed bottom-5 left-1/3 md:top-2/3 md:rotate-270 md:inset-y-0 md:left-[93%] z-50 cursor-pointer bg-linear-to-b from-red-500 to-red-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] h-10 px-2 py-1 rounded-xl border w-30 border-slate-500 text-white font-medium group"
+        <button type="button" class="fixed bottom-5 left-1/3 md:top-3/5 md:rotate-270 md:inset-y-0 md:left-[93%] z-50 cursor-pointer bg-linear-to-b from-red-500 to-red-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] h-10 px-2 py-1 rounded-xl border w-30 border-slate-500 text-white font-medium group"
         id="showform"
         onclick="showForm()">
         <div class="relative overflow-hidden">
@@ -105,7 +105,7 @@
     <p
       class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]"
     >
-      For Quarry
+      For Query
     </p>
   </div></button>
  <form
@@ -176,8 +176,17 @@
     </div>
   </div>
 </form>
- 
-
+<a href="https://wa.me/9205190065"
+    class="h-14 w-14 justify-center rounded-xl text-center
+           bg-green-500/10 backdrop-blur border border-green-500/20
+           transition-all duration-300 hover:scale-125 hover:bg-green-500 fixed right-2 bottom-1/8 md:bottom-1/14"
+  >
+    <img
+      src="./Images/whatapp image.webp"
+      alt="WhatsApp"
+      class="transition duration-300 group-hover:invert"
+    />
+  </a>>
        <div class="md:h-87.5 overflow-hidden mt-30 hidden md:grid md:grid-cols-2 lg:grid lg:grid-cols-[900px_minmax(300px,1fr)_100px] bg-gray-200 mx-auto md:mx-10 rounded-lg gap-5">
            <div class="relative">
              <div class="slide absolute inset-0 opacity-100 transition-opacity duration-700">
@@ -212,23 +221,27 @@
                 <i class="ri-arrow-right-s-fill text-2xl text-white"></i>
             </button>
            </div>
-           <div class="mt-10 py-10">
-                <h1 class="text-center text-xl md:text-4xl head">GANGA REALTY</h1>
-                <div class="overflow-hidden h-40 relative mt-5">
-              <div class="flex flex-col animate-slide">
-               <h2 class="text-base text-gray-700 mb-5">Luxury Residences Offering Exceptional Investment Opportunities</h2>
-               <h2 class="text-base text-gray-700 mb-5">Exclusive Homes Designed for Elegant Living and Smart Returns</h2>
-                <h2 class="text-base text-gray-700 mb-5">Premium Properties Combining Comfort, Style, and High ROI</h2>
-                 <h2 class="text-base text-gray-700 mb-5">High-End Living Spaces with Superior Investment Potential</h2>
-                  <h2 class="text-base text-gray-700 mb-5">Where Luxury Meets Strategic Real Estate Investment</h2>
-                 </div> 
+          <div class="py-10">
+            <h1 class="text-center">
+    <span class="py-10 font-semibold text-4xl" >Ganga </span>
+         <span class="font-semibold text-4xl text-[#A97706]">Realty</span>
+         <br>
+         <span class="text-2xl">Leading Real Estate Developer in Gurgaon</span></h1>
+            <div class="overflow-hidden h-20 relative mt-5">
+                <div class="flex flex-col animate-slide text-gray-600 text-center px-10"> 
+                    <p class="mb-6 text-sm md:text-base font-medium">Premium Ultra-Luxury Apartments on Dwarka Expressway</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">High ROI Real Estate Investment Opportunities in Gurgaon</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">Exclusive 3 & 4 BHK Residences with World-Class Amenities</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">Iconic High-Rise Living Designed for Modern Families</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">Trust & Transparency in Every Square Foot</p>
+                </div> 
             </div>
-           </div>
         </div>
-           
+        
+    </div>  
         <!-- phone view -->
         
-        <div class="overflow-hidden md:hidden h-120 mt-10 grid grid-row-2">
+        <div class="overflow-hidden md:hidden h-[470px] mt-10 grid grid-row-2">
            <div class="relative">
                <div class="slidemobile absolute inset-0 opacity-100 transition-opacity duration-700">
                 <a href="/ganga-realty-anantam-sector-85-gurugram">
@@ -254,20 +267,34 @@
                 </a>
             </div>
            </div>
-              <div class="relative top-3/9 mt-12 py-10">
-                <h1 class="text-center text-semibold text-xl head">GANGA REALTY</span></h1>
-                <div class="overflow-hidden h-40 relative mt-2 px-5">
-              <div class="flex flex-col animate-slide">
-               <h2 class="text-base text-gray-700 mb-2">Luxury Residences Offering Exceptional Investment Opportunities</h2>
-               <h2 class="text-base text-gray-700 mb-2">Exclusive Homes Designed for Elegant Living and Smart Returns</h2>
-                <h2 class="text-base text-gray-700 mb-2">Premium Properties Combining Comfort, Style, and High ROI</h2>
-                 <h2 class="text-base text-gray-700 mb-2">High-End Living Spaces with Superior Investment Potential</h2>
-                  <h2 class="text-base text-gray-700 mb-2">Where Luxury Meets Strategic Real Estate Investment</h2>
-                 </div> 
+              <div class="relative top-3/7 mt-12 py-10 border">
+                  <h1 class="text-center">
+                  <span class="py-10 font-extrabold text-4xl" >Ganga </span>
+                  <span class="font-extrabold text-4xl text-[#A97706]">Realty</span>
+                  <br>
+         <span class="text-2xl">Leading Real Estate Developer in Gurgaon</span></h1>
+            <div class="overflow-hidden h-50 relative mt-4">
+                <div class="flex flex-col animate-slide text-gray-600 text-center px-10 h-100"> 
+                    <p class="mb-6 text-sm md:text-base font-medium">Premium Ultra-Luxury Apartments on Dwarka Expressway</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">High ROI Real Estate Investment Opportunities in Gurgaon</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">Exclusive 3 & 4 BHK Residences with World-Class Amenities</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">Iconic High-Rise Living Designed for Modern Families</p>
+                    <p class="mb-6 text-sm md:text-base font-medium">Trust & Transparency in Every Square Foot</p>
+                </div> 
             </div>
            </div>
         </div>
 
+    <section>
+     
+            <div class="md:mt-10 p-10 md:p-20">
+        <h2 class="text-3xl font-bold text-center mb-5" >About Ganga Realty</h2>
+        <h3 class="text-center text-2xl mb-10">Delivering Excellence in Gurgaon Real Estate Landscape Content</h3>
+        <p class="text-gray-600">Ganga Realty is a name synonymous with trust, quality, and luxury in the Millennium City. As a premier real estate developer in Gurgaon, we focus on creating sustainable and iconic living spaces that offer long-term value. Our flagship projects like Ganga Nandaka, Anantam, and Kashi Residences are strategically located on the Dwarka Expressway and other prime sectors, ensuring excellent connectivity and high ROI for investors. We don't just build homes;
+            we craft lifestyles with superior construction quality and transparent processes.</p>
+       </div>   
+    </section>
+         
         </div>  
         <section id="projects" class="py-10 mx-auto md:mx-10">
             <div class="container mx-auto px-6 py-12 rounded-lg bg-gray-200">
@@ -663,7 +690,6 @@
                     </div>
                 </div>
             </section>
-
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-semibold text-center mb-16 text-black">Frequently Asked Questions <span class="text-[#163E64]">
@@ -1024,8 +1050,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
-</script>
-<script>
+
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".testimonial-slide");
     const dotsContainer = document.getElementById("testimonial-dots");
@@ -1115,8 +1140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(0);
     startAutoSlide();
 });
-</script>
-<script>
+
 const formclose = document.getElementById("formclose");
 const showform = document.getElementById("showform");
 
@@ -1191,8 +1215,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     calculateEMI();
 });
-</script>
- <script>
+
    document.addEventListener("DOMContentLoaded", () => {
             const formclose = document.getElementById("formclose");
             const showform = document.getElementById("showform");
